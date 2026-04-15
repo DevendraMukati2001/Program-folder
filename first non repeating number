@@ -1,0 +1,16 @@
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+    vector<int>arr = {1,2,3,4,5,6,5,2,5};
+    map<int,int>mpp;
+    for(auto it:arr){
+        mpp[it]++;
+    }
+    for(auto it:arr){
+        if(mpp[it]==1){
+        cout<<it;
+        break;
+       }
+    }
+}
