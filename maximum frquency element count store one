@@ -1,0 +1,19 @@
+//maximum frquency element count store one or multiple value.
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+    vector<int>arr = {1,2,3,4,5,6,5,2,5};
+    map<int,int>mpp;
+    for(auto it:arr){
+        mpp[it]++;
+    }
+    int freq = 0,ans;
+    for(auto it:mpp){
+      if(it.second>freq){
+          freq=it.second;
+          ans = it.first;
+      }
+    }
+    cout<<ans;
+}
