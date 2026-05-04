@@ -1,0 +1,17 @@
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+   vector<int> arr ={2,24,44,5,33,45,3,34};
+   int n = arr.size();
+   int d ;
+   cin>>d;
+   d=d%n;
+   reverse(arr.begin(),arr.begin()+d);
+   reverse(arr.begin()+d,arr.end());
+   reverse(arr.begin(),arr.end());
+   for(auto it:arr)
+   {
+       cout<<" "<<it;
+    }
+}
